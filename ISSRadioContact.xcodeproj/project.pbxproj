@@ -13,6 +13,9 @@
 		842A71A0256E8E530032E08D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 842A719F256E8E530032E08D /* Preview Assets.xcassets */; };
 		842A71AB256E8E530032E08D /* ISSRadioContactTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842A71AA256E8E530032E08D /* ISSRadioContactTests.swift */; };
 		842A71B6256E8E530032E08D /* ISSRadioContactUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842A71B5256E8E530032E08D /* ISSRadioContactUITests.swift */; };
+		8470E947256EAEFF00BA8D00 /* ButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8470E946256EAEFF00BA8D00 /* ButtonModifier.swift */; };
+		8470E94F256EAFD800BA8D00 /* Color+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8470E94E256EAFD800BA8D00 /* Color+Style.swift */; };
+		8470E958256EB69E00BA8D00 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8470E95A256EB69E00BA8D00 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,10 @@
 		842A71B1256E8E530032E08D /* ISSRadioContactUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ISSRadioContactUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		842A71B5256E8E530032E08D /* ISSRadioContactUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSRadioContactUITests.swift; sourceTree = "<group>"; };
 		842A71B7256E8E530032E08D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8470E946256EAEFF00BA8D00 /* ButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonModifier.swift; sourceTree = "<group>"; };
+		8470E94E256EAFD800BA8D00 /* Color+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Style.swift"; sourceTree = "<group>"; };
+		8470E959256EB69E00BA8D00 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8470E95E256EB71E00BA8D00 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +82,7 @@
 		842A718C256E8E520032E08D = {
 			isa = PBXGroup;
 			children = (
+				8470E95A256EB69E00BA8D00 /* Localizable.strings */,
 				842A7197256E8E520032E08D /* ISSRadioContact */,
 				842A71A9256E8E530032E08D /* ISSRadioContactTests */,
 				842A71B4256E8E530032E08D /* ISSRadioContactUITests */,
@@ -95,6 +103,7 @@
 		842A7197256E8E520032E08D /* ISSRadioContact */ = {
 			isa = PBXGroup;
 			children = (
+				8470E944256EAEBB00BA8D00 /* Presentation */,
 				842A7198256E8E520032E08D /* ISSRadioContactApp.swift */,
 				842A719A256E8E520032E08D /* ContentView.swift */,
 				842A719C256E8E530032E08D /* Assets.xcassets */,
@@ -128,6 +137,23 @@
 				842A71B7256E8E530032E08D /* Info.plist */,
 			);
 			path = ISSRadioContactUITests;
+			sourceTree = "<group>";
+		};
+		8470E944256EAEBB00BA8D00 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				8470E945256EAEC900BA8D00 /* Common */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		8470E945256EAEC900BA8D00 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				8470E946256EAEFF00BA8D00 /* ButtonModifier.swift */,
+				8470E94E256EAFD800BA8D00 /* Color+Style.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,6 +241,7 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
 			);
 			mainGroup = 842A718C256E8E520032E08D;
 			productRefGroup = 842A7196256E8E520032E08D /* Products */;
@@ -234,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				842A71A0256E8E530032E08D /* Preview Assets.xcassets in Resources */,
+				8470E958256EB69E00BA8D00 /* Localizable.strings in Resources */,
 				842A719D256E8E530032E08D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,8 +287,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8470E947256EAEFF00BA8D00 /* ButtonModifier.swift in Sources */,
 				842A719B256E8E520032E08D /* ContentView.swift in Sources */,
 				842A7199256E8E520032E08D /* ISSRadioContactApp.swift in Sources */,
+				8470E94F256EAFD800BA8D00 /* Color+Style.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,11 +325,24 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		8470E95A256EB69E00BA8D00 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8470E959256EB69E00BA8D00 /* en */,
+				8470E95E256EB71E00BA8D00 /* fr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		842A71B8256E8E530032E08D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -361,6 +404,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
