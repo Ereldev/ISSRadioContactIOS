@@ -20,6 +20,8 @@
 		8470E9782577CA6D00BA8D00 /* PreferencesDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8470E9772577CA6D00BA8D00 /* PreferencesDomain.swift */; };
 		8470E9802577D77500BA8D00 /* PreferencesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8470E97F2577D77500BA8D00 /* PreferencesRepository.swift */; };
 		8470E9882577DDF300BA8D00 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8470E9872577DDF300BA8D00 /* MainView.swift */; };
+		8470E99B257805BD00BA8D00 /* RadioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8470E99A257805BD00BA8D00 /* RadioView.swift */; };
+		8470E9A0257805F100BA8D00 /* PassListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8470E99F257805F100BA8D00 /* PassListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,8 @@
 		8470E9772577CA6D00BA8D00 /* PreferencesDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesDomain.swift; sourceTree = "<group>"; };
 		8470E97F2577D77500BA8D00 /* PreferencesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesRepository.swift; sourceTree = "<group>"; };
 		8470E9872577DDF300BA8D00 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		8470E99A257805BD00BA8D00 /* RadioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioView.swift; sourceTree = "<group>"; };
+		8470E99F257805F100BA8D00 /* PassListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +201,7 @@
 		8470E9842577DD0E00BA8D00 /* Radio */ = {
 			isa = PBXGroup;
 			children = (
+				8470E99A257805BD00BA8D00 /* RadioView.swift */,
 			);
 			path = Radio;
 			sourceTree = "<group>";
@@ -204,6 +209,7 @@
 		8470E9852577DD3800BA8D00 /* Pass */ = {
 			isa = PBXGroup;
 			children = (
+				8470E99F257805F100BA8D00 /* PassListView.swift */,
 			);
 			path = Pass;
 			sourceTree = "<group>";
@@ -352,7 +358,9 @@
 				8470E947256EAEFF00BA8D00 /* ButtonModifier.swift in Sources */,
 				8470E9782577CA6D00BA8D00 /* PreferencesDomain.swift in Sources */,
 				842A719B256E8E520032E08D /* OnboardingView.swift in Sources */,
+				8470E9A0257805F100BA8D00 /* PassListView.swift in Sources */,
 				8470E9802577D77500BA8D00 /* PreferencesRepository.swift in Sources */,
+				8470E99B257805BD00BA8D00 /* RadioView.swift in Sources */,
 				842A7199256E8E520032E08D /* ISSRadioContactApp.swift in Sources */,
 				8470E94F256EAFD800BA8D00 /* Color+Style.swift in Sources */,
 			);

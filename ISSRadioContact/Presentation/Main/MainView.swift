@@ -12,13 +12,15 @@ struct MainView: View {
     var body: some View {
         NavigationView {
             TabView {
-                Text("Tab 1")
+                RadioView()
                     .tabItem {
-                        Text("Tab 1")
+                        Image(systemName: "1.square.fill")
+                        Text("TAB_RADIO")
                     }
-                Text("Tab 2")
+                PassListView()
                     .tabItem {
-                        Text("Tab 2")
+                        Image(systemName: "2.square.fill")
+                        Text("TAB_PASS")
                     }
             }
         }

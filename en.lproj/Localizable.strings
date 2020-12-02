@@ -8,7 +8,10 @@
 
 "ISS_RADIO_CONTACT" = "ISS Radio Contact";
 
-"ONBOARDING_DESC_1" = "Do you now that you can listen the ISS team with a simple radio ?";
+"ONBOARDING_DESC_1" = "Did you now that you can listen the ISS team with a simple radio ?";
 "ONBOARDING_DESC_2" = "Use the app to follow ISS passages on your current location and to get help to setup your radio";
 
 "START_NOW" = "Start Now !";
+
+"TAB_RADIO" = "Radio";
+"TAB_PASS" = "Pass";
