@@ -9,9 +9,17 @@ import SwiftUI
 
 @main
 struct ISSRadioContactApp: App {
+    
+    @AppStorage("onboardingDisplayed") private var onboardingDisplayed = false
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if onboardingDisplayed {
+                MainView()
+            } else {
+                OnboardingView(viewModel: OnboardingViewModel())
+            }
         }
     }
+    
 }

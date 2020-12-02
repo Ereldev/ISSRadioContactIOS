@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		842A7199256E8E520032E08D /* ISSRadioContactApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842A7198256E8E520032E08D /* ISSRadioContactApp.swift */; };
-		842A719B256E8E520032E08D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842A719A256E8E520032E08D /* ContentView.swift */; };
+		842A719B256E8E520032E08D /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842A719A256E8E520032E08D /* OnboardingView.swift */; };
 		842A719D256E8E530032E08D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 842A719C256E8E530032E08D /* Assets.xcassets */; };
 		842A71A0256E8E530032E08D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 842A719F256E8E530032E08D /* Preview Assets.xcassets */; };
 		842A71AB256E8E530032E08D /* ISSRadioContactTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842A71AA256E8E530032E08D /* ISSRadioContactTests.swift */; };
@@ -16,6 +16,10 @@
 		8470E947256EAEFF00BA8D00 /* ButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8470E946256EAEFF00BA8D00 /* ButtonModifier.swift */; };
 		8470E94F256EAFD800BA8D00 /* Color+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8470E94E256EAFD800BA8D00 /* Color+Style.swift */; };
 		8470E958256EB69E00BA8D00 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8470E95A256EB69E00BA8D00 /* Localizable.strings */; };
+		8470E9712577C8EC00BA8D00 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8470E9662577C76900BA8D00 /* OnboardingViewModel.swift */; };
+		8470E9782577CA6D00BA8D00 /* PreferencesDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8470E9772577CA6D00BA8D00 /* PreferencesDomain.swift */; };
+		8470E9802577D77500BA8D00 /* PreferencesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8470E97F2577D77500BA8D00 /* PreferencesRepository.swift */; };
+		8470E9882577DDF300BA8D00 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8470E9872577DDF300BA8D00 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +42,7 @@
 /* Begin PBXFileReference section */
 		842A7195256E8E520032E08D /* ISSRadioContact.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ISSRadioContact.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		842A7198256E8E520032E08D /* ISSRadioContactApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSRadioContactApp.swift; sourceTree = "<group>"; };
-		842A719A256E8E520032E08D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		842A719A256E8E520032E08D /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		842A719C256E8E530032E08D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		842A719F256E8E530032E08D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		842A71A1256E8E530032E08D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -52,6 +56,10 @@
 		8470E94E256EAFD800BA8D00 /* Color+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Style.swift"; sourceTree = "<group>"; };
 		8470E959256EB69E00BA8D00 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8470E95E256EB71E00BA8D00 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8470E9662577C76900BA8D00 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		8470E9772577CA6D00BA8D00 /* PreferencesDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesDomain.swift; sourceTree = "<group>"; };
+		8470E97F2577D77500BA8D00 /* PreferencesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesRepository.swift; sourceTree = "<group>"; };
+		8470E9872577DDF300BA8D00 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,9 +111,9 @@
 		842A7197256E8E520032E08D /* ISSRadioContact */ = {
 			isa = PBXGroup;
 			children = (
+				8470E9752577CA2C00BA8D00 /* Domain */,
 				8470E944256EAEBB00BA8D00 /* Presentation */,
 				842A7198256E8E520032E08D /* ISSRadioContactApp.swift */,
-				842A719A256E8E520032E08D /* ContentView.swift */,
 				842A719C256E8E530032E08D /* Assets.xcassets */,
 				842A71A1256E8E530032E08D /* Info.plist */,
 				842A719E256E8E530032E08D /* Preview Content */,
@@ -142,6 +150,10 @@
 		8470E944256EAEBB00BA8D00 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				8470E9622577C6B100BA8D00 /* Onboarding */,
+				8470E9862577DDE500BA8D00 /* Main */,
+				8470E9842577DD0E00BA8D00 /* Radio */,
+				8470E9852577DD3800BA8D00 /* Pass */,
 				8470E945256EAEC900BA8D00 /* Common */,
 			);
 			path = Presentation;
@@ -154,6 +166,54 @@
 				8470E94E256EAFD800BA8D00 /* Color+Style.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		8470E9622577C6B100BA8D00 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				842A719A256E8E520032E08D /* OnboardingView.swift */,
+				8470E9662577C76900BA8D00 /* OnboardingViewModel.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		8470E9752577CA2C00BA8D00 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				8470E9762577CA3300BA8D00 /* Preferences */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		8470E9762577CA3300BA8D00 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				8470E9772577CA6D00BA8D00 /* PreferencesDomain.swift */,
+				8470E97F2577D77500BA8D00 /* PreferencesRepository.swift */,
+			);
+			path = Preferences;
+			sourceTree = "<group>";
+		};
+		8470E9842577DD0E00BA8D00 /* Radio */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Radio;
+			sourceTree = "<group>";
+		};
+		8470E9852577DD3800BA8D00 /* Pass */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pass;
+			sourceTree = "<group>";
+		};
+		8470E9862577DDE500BA8D00 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				8470E9872577DDF300BA8D00 /* MainView.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,8 +347,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8470E9712577C8EC00BA8D00 /* OnboardingViewModel.swift in Sources */,
+				8470E9882577DDF300BA8D00 /* MainView.swift in Sources */,
 				8470E947256EAEFF00BA8D00 /* ButtonModifier.swift in Sources */,
-				842A719B256E8E520032E08D /* ContentView.swift in Sources */,
+				8470E9782577CA6D00BA8D00 /* PreferencesDomain.swift in Sources */,
+				842A719B256E8E520032E08D /* OnboardingView.swift in Sources */,
+				8470E9802577D77500BA8D00 /* PreferencesRepository.swift in Sources */,
 				842A7199256E8E520032E08D /* ISSRadioContactApp.swift in Sources */,
 				8470E94F256EAFD800BA8D00 /* Color+Style.swift in Sources */,
 			);
